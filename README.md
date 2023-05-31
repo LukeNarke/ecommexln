@@ -1,0 +1,1 @@
+This is a format / structure for an ecommerce website and is meant to be an example of coding and general design ability.

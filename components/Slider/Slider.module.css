@@ -1,0 +1,21 @@
+/* Slider.jsx */
+.slider {
+  @apply h-[calc(100vh-5rem)] flex duration-1000;
+}
+
+.navigators {
+  @apply relative left-0 right-0 bottom-20 z-[1] text-2xl flex justify-around gap-10;
+}
+
+.navigators-btn {
+  @apply h-14 w-20 flex justify-center items-center bg-cyan-500 text-cyan-200 border border-cyan-200 hover:bg-gray-900 hover:text-gray-200 hover:border-gray-200 duration-300;
+}
+
+/* Slide.jsx */
+.slide {
+    @apply w-full h-full bg-center bg-no-repeat bg-cover overflow-hidden;
+  }
+
+.slide__text {
+@apply mx-auto mt-6 flex flex-col items-center justify-start h-full gap-5 text-violet-50;
+}

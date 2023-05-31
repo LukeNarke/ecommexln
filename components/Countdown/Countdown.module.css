@@ -1,0 +1,8 @@
+.countdown {
+    @apply container mx-auto px-5 lg:px-0 pt-5 mb-10 flex flex-col gap-10 items-center;
+}
+
+.countdown__timer {
+    @apply text-center text-3xl md:text-6xl font-bold bg-cyan-500 p-7 text-cyan-100 px-10 w-full md:w-[40rem]
+}
+

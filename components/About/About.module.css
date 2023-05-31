@@ -1,0 +1,5 @@
+/* ImageAbout.jsx */
+.image__about {
+  @apply py-10;
+}
+

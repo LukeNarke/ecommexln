@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+.wrapper {
+  @apply container mx-auto px-5 lg:px-0;
+}
+
+.linear-walkaways {
+  @apply relative before:absolute before:top-1/2 before:left-0 before:w-0 before:h-[1px] before:bg-cyan-500 before:duration-300;
+}
+
+.linear-walkaways:hover {
+    @apply text-cyan-500 duration-300;
+}
+
+.counting-bubble {
+  @apply absolute -right-2 bottom-0 bg-black w-4 h-4 rounded-full flex justify-center items-center text-white text-xs;
+}
+/* check wrapper after editing everything */
+/* .wrapper {
+  @apply container mx-auto px-5 lg:px-0;
+} */
+
+/* HOME SLIDE */
+.cta-btn {
+  @apply relative;
+}
+
+.cta-btn::before {
+  content: "";
+  /* @apply top-0 left-0 right-0 bottom-0 absolute bg-cyan-500 w-0 duration-300 z-10; */
+  @apply top-0 left-0 right-0 bottom-0 absolute bg-cyan-500 w-0 z-10;
+}
+
+.cta-btn:hover::before {
+  @apply w-full;
+}
+
+.navigators {
+  @apply absolute left-0 right-0 bottom-20 m-auto w-fit z-[1] text-2xl flex gap-10;
+}
+
+.navigators-btn {
+  @apply h-14 w-20 flex justify-center items-center bg-cyan-500 text-cyan-200 border border-cyan-200 hover:bg-gray-900 hover:text-gray-200 hover:border-gray-200 duration-300;
+}
+
+.section-title {
+  @apply text-3xl lg:text-5xl uppercase font-thin;
+}
+
+/* MOBILE NAV */
+
+.flexColMod {
+  @apply flex flex-col fixed z-[2] w-screen h-[calc(screen-5rem)] mt-20 bg-white/80 top-0 bottom-0 left-0 right-0 items-center justify-center text-xl gap-5 text-center backdrop-blur-xl uppercase;
+}
+
+.lock-scroll {
+  overflow: hidden;
+}
+
+
+/* COPYRIGHT */
+.copyright {
+  @apply border-t border-gray-500/40 pt-20 text-gray-400 text-center uppercase;
+}
